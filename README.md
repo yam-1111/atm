@@ -2,7 +2,8 @@
 
 Original Author : Aaron Gabriel Silerio
 
-### dependencies
+### prerequisities & dependencies
+* gcc compiler
 * Cmake
 * curses
 ## How to run?

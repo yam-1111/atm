@@ -1,6 +1,6 @@
 # atm (source code)
 
-Original Author : Aaron Gabriel Silerio & Angelo Rodelas
+Authors : Aaron Gabriel Silerio & Angelo Rodelas
 
 ### prerequisities & dependencies
 * gcc compiler

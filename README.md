@@ -7,7 +7,10 @@ Original Author : Aaron Gabriel Silerio
 * Cmake
 * curses
 ## How to run?
-clone the repo first
+clone the repo
+```
+git clone https://github.com/yam-1111/atm
+```
 ### Linux (UBUNTU / DEBIAN)
 install the `curses.h` library
 ```

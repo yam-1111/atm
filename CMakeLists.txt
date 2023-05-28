@@ -15,6 +15,8 @@ add_executable(
 if (NOT CMAKE_SYSTEM_NAME STREQUAL "Windows")
     message("running on LINUX")
     target_link_libraries(atm2 ncurses)
+else()
+    message("running on Windows")
 endif()
 
 # Include the directories containing the header files

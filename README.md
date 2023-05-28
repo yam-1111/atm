@@ -12,7 +12,7 @@ clone the repo
 git clone https://github.com/yam-1111/atm
 ```
 ### Windows
-* On your VSCODE Powershell
+#### On your VSCODE Powershell
 
 create a new folder name build
 ```
@@ -34,7 +34,7 @@ run the program, if the `exe` file located in `build` folder
 ```
 ./build/atm2
 ```
-* via vscode extension
+#### via vscode extension
 you can install [cmake tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools) on VSCODE 
 
 click the build button on the status bar in VSCODE

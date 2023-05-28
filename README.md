@@ -23,9 +23,9 @@ change directory to `build` folder
 ```
 cd build
 ```
-generate build files using CMake installed on you system
+generate build files using MinGW Makefiles
 ```
-cmake ..
+cmake -G "MinGW Makefiles" ..
 ```
 run the command below to have executable program
 ```

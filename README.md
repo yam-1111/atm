@@ -2,10 +2,11 @@
 
 Authors : Aaron Gabriel Silerio & Angelo Rodelas
 
-### prerequisities & dependencies
+## prerequisities & dependencies
 * gcc compiler
 * Cmake
 * curses (linux)
+* 
 ## How to run?
 clone the repo
 ```

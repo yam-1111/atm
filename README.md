@@ -1,18 +1,18 @@
 # atm (source code)
 
-Authors : Aaron Gabriel Silerio & Angelo Rodelas
+👥 Authors : Aaron Gabriel Silerio & Angelo Rodelas
 
-## prerequisities & dependencies
+## 🧰 prerequisities & dependencies
 * gcc compiler
 * Cmake
 * curses (linux)
-* 
-## How to run?
+* CMake tools (optional)
+## ❓ How to run?
 clone the repo
 ```
 git clone https://github.com/yam-1111/atm
 ```
-### Windows
+### 🪟 Windows
 #### On your VSCODE Powershell
 
 create a new folder name build
@@ -46,7 +46,7 @@ run the program, if the `exe` file located in `build` folder with:
 ./build/atm2
 ```
 
-### Linux (UBUNTU / DEBIAN)
+### 🐧 Linux (UBUNTU / DEBIAN)
 install the `curses.h` library
 ```
 sudo apt install libncurses5-dev -y 

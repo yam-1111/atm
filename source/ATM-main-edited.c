@@ -52,7 +52,7 @@ int main (int argc, char *argv[]) {
                     printf("\n\t>> Error! the pin contains non-numerics");
                 }
                 else
-                    printf("\n\t>> Error!");
+                    printf("\n\t>> Error! the pin is not the same");
                 x = 1;
                 getch();
             }

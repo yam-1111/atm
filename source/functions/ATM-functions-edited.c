@@ -53,13 +53,14 @@ int PINcheck(char PIN[6]) {
     // performs checking if has non-number character
     if(not_match == 0){
         for (int k = 0; k < 6; k++) {
-            if(!isdigit(PINconfirm[k])) { // checks the confirmed pin if it is all numeric
+            if(!isdigit(PIN[k])) { // checks the confirmed pin if it is all numeric
                 not_num++; // Increment the not_num count
             }
         }
         // returns negative number if there is non-numeric in the PINconfirm
-        if(not_num != 0)
+        if(not_num != 0){
             return -1;
+        }
     }
 
     printf("\n");
@@ -218,7 +219,6 @@ int PINcompare(const char PIN[6], const char PIN2[6]) {
     }
 
     // Check if all digits match or not
-    printf("THE MATCH PIN IS : %d ", match);
     if (match != 6) {
         return 1; // Return 1 if the PINs don't match
     } else if(notnum!=0){

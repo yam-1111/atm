@@ -218,6 +218,7 @@ int PINcompare(const char PIN[6], const char PIN2[6]) {
     }
 
     // Check if all digits match or not
+    printf("THE MATCH PIN IS : %d ", match);
     if (match != 6) {
         return 1; // Return 1 if the PINs don't match
     } else if(notnum!=0){

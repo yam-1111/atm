@@ -44,7 +44,7 @@ int main (int argc, char *argv[]) {
         do
         {
             check = PINcheck(PIN);
-            if(check > 0 || check < 0)
+            if(check != 0)
             {
             
                 check = 0;

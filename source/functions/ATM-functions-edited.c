@@ -53,7 +53,7 @@ int PINcheck(char PIN[6]) {
     // performs checking if has non-number character
     if(not_match == 0){
         for (int k = 0; k < 6; k++) {
-            if(!isdigit(PIN[k])) { // checks the confirmed pin if it is all numeric
+            if(!isdigit(PIN[k]) && PIN[K]!='\0') { // checks the confirmed pin if it is all numeric
                 not_num++; // Increment the not_num count
             }
         }
@@ -212,7 +212,7 @@ int PINcompare(const char PIN[6], const char PIN2[6]) {
     // checks if the character are non-numerical i.e special chars & alphabetical
     if(match==6){
         for(int k=0;k<6;k++){
-                    if(!isdigit(PIN2[k])){
+                    if(!isdigit(PIN2[k]) && PIN2[K]!='\0'){
                         notnum++;
                     }
         }

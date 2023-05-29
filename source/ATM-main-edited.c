@@ -45,16 +45,13 @@ int main (int argc, char *argv[]) {
         {
             check = PINcheck(PIN);
             printf("%d CHECK \n\n", check);
-            if(check != 0 || check < 0)
+            if(check > 0)
             {
-                if(check == -1){
-                    printf("\n\t>> Error! the pin contains non-numerics");
-                }
-                else if(check > 0)
-                    printf("\n\t>> Error! the pin is not the same");
-
                 check = 0;
-               
+                if(check < 0)
+                    printf("\n\t>> Error!");
+                else 
+                    printf("\n\t>> Error the PIN must be a number!");
                 x = 1;
                 getch();
             }

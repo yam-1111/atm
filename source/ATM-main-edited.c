@@ -44,7 +44,7 @@ int main (int argc, char *argv[]) {
         do
         {
             check = PINcheck(PIN);
-            if(check > 0)
+            if(check > 0 || check < 0)
             {
                 check = 0;
                 printf("\n\t>> Error!");
@@ -128,9 +128,14 @@ int main (int argc, char *argv[]) {
 
                 re_enter = PINcompare(PIN, PIN_comp);
 
-                if (re_enter == 1)
+                if (re_enter == 1 || re_enter == -1)
                 {
-                    printf("\n\n\t\t>> PIN do not match!\n");
+                    if(re_enter==1){
+                        printf("\n\n\t\t>> PIN do not match!\n");
+                    }
+                    else if(re_enter==-1){
+                        printf("\n\n\t\t>> PIN must be a number!\n");
+                    }
                     getch();
 
                     for (int i = 0; i < 6; i++)
@@ -140,7 +145,7 @@ int main (int argc, char *argv[]) {
                     p = 0;
                 }
 
-            } while (re_enter == 1);
+            } while (re_enter == 1 || re_enter == -1);
 
             p = 0;
             x = 0;

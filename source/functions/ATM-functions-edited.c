@@ -32,7 +32,7 @@ int aborting_screen(void) {
 
 int PINcheck(char PIN[6]) {
     char PINconfirm[6] = {}; // Array to store the confirmed PIN
-    int p = 0, not_match = 0; // Counter variable and mismatch count
+    int p = 0, not_match = 0, not_num = 0; // Counter variable and mismatch count
 
     printf("\n\n\tConfirm your PIN");
     printf("\n\n\t\tRe-Enter PIN: ");
@@ -50,6 +50,18 @@ int PINcheck(char PIN[6]) {
             not_match++; // Increment the mismatch count
         }
     }
+    // performs checking if has non-number character
+    if(not_match == 0){
+        for (int k = 0; k < 6; k++) {
+            if(!isdigit(PINconfirm[k])) { // checks the confirmed pin if it is all numeric
+                not_num++; // Increment the not_num count
+            }
+        }
+        // returns negative number if there is non-numeric in the PINconfirm
+        if(not_num != 0)
+            return -1;
+    }
+
     printf("\n");
 
     return not_match; // Return the number of mismatches
@@ -187,6 +199,7 @@ float withdraw(float amnt) {
 
 int PINcompare(const char PIN[6], const char PIN2[6]) {
     int match = 0; // Variable to count the number of matching digits
+    int notnum = 0; // Variable to count the number of non-numerical chars
 
     // Iterate over each digit in the PINs
     for (int i = 0; i < 6; i++) {
@@ -195,9 +208,20 @@ int PINcompare(const char PIN[6], const char PIN2[6]) {
         }
     }
 
+    // checks if the character are non-numerical i.e special chars & alphabetical
+    if(match==6){
+        for(int k=0;k<6;k++){
+                    if(!isdigit(PIN2[k])){
+                        notnum++;
+                    }
+        }
+    }
+
     // Check if all digits match or not
     if (match != 6) {
         return 1; // Return 1 if the PINs don't match
+    } else if(notnum!=0){
+        return -1;
     } else {
         return 0; // Return 0 if the PINs match
     }

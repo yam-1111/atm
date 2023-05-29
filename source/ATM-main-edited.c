@@ -48,6 +48,7 @@ int main (int argc, char *argv[]) {
             {
             
                 check = 0;
+                printf("%d CHECK \n\n", check);
                 if(check == -1){
                     printf("\n\t>> Error! the pin contains non-numerics");
                 }

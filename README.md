@@ -41,9 +41,9 @@ you can install [cmake tools](https://marketplace.visualstudio.com/items?itemNam
 click the build button on the status bar in VSCODE
 
 select the `build with gcc 8.x.x`
-run the program, if the `exe` file located in `build` folder with:
+run the executable program
 ```
-./build/atm2
+./atm2
 ```
 
 ### 🐧 Linux (UBUNTU / DEBIAN)
